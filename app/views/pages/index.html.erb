@@ -1,0 +1,8 @@
+<%= content_tag :div,
+  id: "current_route",
+  props: {
+		route: @current_route
+	}.to_json do %>
+<% end %>
+
+<%= javascript_pack_tag 'app' %>
