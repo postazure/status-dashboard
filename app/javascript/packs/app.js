@@ -1,13 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import Feed from './components/Feed'
 
 class App extends React.Component {
 	render () {
 		return (
-			<div>
-				React App {this.props.route}
-			</div>
+			<Router>
+				<Route path="/feed" component={Feed} />
+			</Router>
 		)
 	}
 }
